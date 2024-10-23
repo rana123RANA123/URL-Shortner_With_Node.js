@@ -6,7 +6,7 @@ const URL = require("./models/url");
 const app = express();
 const PORT = 8001;
 
-connectToMongoDB("mongodb+srv://nodejspractice:nodejspractice@cluster0.ogrx2lt.mongodb.net/url?retryWrites=true&w=majority&appName=Cluster0").then(() =>
+connectToMongoDB("mongodb+srv://firstbackend:firstbackend@cluster0.zpsvvf1.mongodb.net/Nodejs-Deploy?retryWrites=true&w=majority&appName=Cluster0").then(() =>
   console.log("Mongodb connected")
 );
 
