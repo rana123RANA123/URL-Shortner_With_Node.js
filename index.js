@@ -13,9 +13,8 @@ connectToMongoDB("mongodb+srv://firstbackend:firstbackend@cluster0.zpsvvf1.mongo
 app.use(express.json());
 
 app.use("/url", urlRoute);
-app.get("/", async (req, res) => {
-  console.log(Vercel Server Running!)
-})
+app.get("/", (req, res) => res.send("Express on Vercel"));
+
 app.get("/:shortId", async (req, res) => {
   const shortId = req.params.shortId;
   const entry = await URL.findOneAndUpdate(
